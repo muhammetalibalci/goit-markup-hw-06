@@ -1,0 +1,52 @@
+body {
+    background-color: #ffffff;
+    font-family: "Roboto", sans-serif;
+}
+.main-header-webstudio {
+    text-decoration: none;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-list a {
+    color: #2E2F42;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5em;
+    letter-spacing: 2%;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.address-list a {
+    color: #434455;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+    letter-spacing: 2%;
+    text-decoration: none;
+}
+
+.h1-text {
+    color: black;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07em;
+    letter-spacing: 2%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button-styles {
+    color: #ffffff;
+    background-color: #4D5AE5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5em;
+    letter-spacing: 4%;
+    text-decoration: none;
+    
+}
