@@ -17,6 +17,16 @@ body {
 .main-logo-studio {
     font-family: "Raleway", sans-serif;
     text-decoration: none;
+    color: #2E2F42;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.16em;
+    letter-spacing: 3%;
+}
+
+.main-logo-studio-footer {
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
     color: #F4F4FD;
     font-weight: 700;
     font-size: 18px;
