@@ -17,7 +17,6 @@ body {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
-  align-items: center;
 }
 
 a {
@@ -30,6 +29,15 @@ img {
 
 /* Header */
 
+.container-header {
+  padding: 24px;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.container-header .container {
+  display: flex;
+}
+
 .nav-logo {
   font-family: "Raleway", sans-serif;
   text-decoration: none;
@@ -40,13 +48,20 @@ img {
   letter-spacing: 3%;
   text-align: center;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
 .nav-logo .logo-span {
   color: #2e2f42;
 }
 
-.header-list a {
+.nav-list {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.nav-list-item .link {
   color: #2e2f42;
   font-weight: 500;
   font-size: 16px;
@@ -54,22 +69,39 @@ img {
   letter-spacing: 2%;
   font-style: normal;
   text-decoration: none;
+  padding: 24px 0;
 }
 
-.header-list a:hover {
+.nav-list-item .link:hover {
   color: #404bbf;
 }
 
-.header-list a:active {
+.nav-list-item .link:active {
   color: #404bbf;
   text-decoration: underline;
 }
 
-.header-list li {
-  list-style-type: none;
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.address-list a {
+.contact {
+  font-style: normal;
+  display: flex;
+  margin-left: auto;
+}
+
+.address-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+}
+
+.contact .link {
   color: #434455;
   font-weight: 400;
   font-size: 16px;
@@ -79,63 +111,17 @@ img {
   font-style: normal;
 }
 
-.address-list a:hover {
+.contact .link:hover, .address-list:focus {
   color: #404bbf;
 }
 
-.address-list a:active {
+.contact .link:active {
   color: #404bbf;
   text-decoration: underline;
 }
 
-.address-list li {
+.address-list-item .link {
   list-style: none;
-}
-
-.menu-nav {
-  width: 261px;
-  height: 24px;
-  gap: 40px;
-  display: flex;
-  align-items: center;
-  margin-left: 76px;
-}
-
-.container-header {
-  height: 72px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #e7e9fc;
-}
-
-.address-list ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: end;
-  margin-left: 332px;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  margin-left: 156px;
-  width: 115px;
-  height: 24px;
-}
-
-.mail-text {
-  width: 153px;
-  height: 24px;
-  margin-right: 40px;
-}
-
-.tel-text {
-  width: 151px;
-  height: 24px;
-  margin-right: 156px;
-  text-align: center;
 }
 
 /* First Section */
