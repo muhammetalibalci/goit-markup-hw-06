@@ -9,12 +9,11 @@
 body {
   background-color: #ffffff;
   font-family: "Roboto", sans-serif;
-  min-width: 1440px;
-  height: 3300px;
 }
 
 .container {
-  width: 1158px;
+  width: 100%;
+  max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -146,7 +145,6 @@ img {
 /* First Section */
 
 .first-section {
-  max-width: 1440px;
   background-color: #2e2f42;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-1.jpg);
   background-position: center;
@@ -173,7 +171,6 @@ img {
   text-align: center;
   text-decoration: none;
   max-width: 496px;
-  height: 120px;
   margin-bottom: 48px;
 }
 
@@ -212,7 +209,7 @@ img {
 /* Second Section */
 
 .second-section {
-  padding: 120px;
+  padding: 120px 0;
 }
 
 .second-section-list-item .icon-container {
@@ -232,6 +229,7 @@ img {
 .second-section-list {
   display: flex;
   gap: 24px;
+  min-height: 104px;
 }
 
 .second-section-list-item {
@@ -305,6 +303,10 @@ img {
   box-shadow: 0px 2px 1px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229,
     0px 1px 6px 0px #2e2f4214;
   border-radius: 0px 0px 4px 4px;
+}
+
+.third-section li {
+  width: 264px;
 }
 
 .list-item-container {
@@ -393,6 +395,11 @@ img {
   width: calc((100% - 48px) / 3);
 }
 
+.forth-section li {
+  width: 360px;
+  height: 420px;
+}
+
 .forth-section-list-item-container {
   border: 1px solid #e7e9fc;
   border-top: none;
@@ -466,6 +473,7 @@ img {
   align-items: center;
   justify-content: center;
   position: fixed;
+  visibility: hidden;
 }
 
 .close-div {
@@ -583,8 +591,6 @@ img {
   padding-top: 8px;
   top: 4px;
 }
-
-
 
 .comment-css::placeholder {
   color: #2E2F4266;
@@ -745,6 +751,7 @@ img {
 .footer-section .container {
   display: flex;
   align-items: baseline;
+  width: 100%;
 }
 
 .footer-logo-text-container {
@@ -834,4 +841,129 @@ img {
   width: 24px;
   height: 24px;
   margin-left: 16px;
+}
+
+
+/* Tablet Responsive */
+
+@media screen and (min-width: 768px) and (max-width: 1158px) {
+  .container-header {
+    display: flex;
+    padding: 0;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    justify-content: center;
+  }
+
+  .header-nav {
+    display: flex;
+  }
+  
+  .nav-list {
+    margin-left: 120px;
+  }
+
+  .address-list {
+    display: block;
+  }
+
+  .link {
+    margin: 0 auto;
+  }
+
+  .nav-list-item:nth-of-type(1) .link::after {
+    bottom: -4px;
+  }
+
+  .first-section {
+    height: 436px;
+    padding: 0;
+    padding-top: 112px;
+  }
+
+  .second-section {
+    align-items: center;
+    margin-left: 0px;
+  }
+
+  .second-section-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .second-section-list .icon-container {
+    display: none;
+  }
+
+  .second-section-list-item {
+    min-width: 339px;
+  }
+
+  .second-section-list-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11em;
+    letter-spacing: 2%;
+  }
+
+  .second-section p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5em;
+    letter-spacing: 2%;
+  }
+
+  .third-section-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .forth-section-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .footer-section .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 108px;
+    margin-right: 164px;
+  }
+
+  .footer-logo-text-container {
+    margin: 0;
+    margin-bottom: 72px;
+  }
+
+  .footer-form {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer-social-media {
+    margin: 0px;
+  }
+
+  .subscribe-container {
+    margin: 0;
+  }
+}
+
+@media (min-resolution: 192dpi) {
+  .first-section {
+    background-image: radial-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/people-office-1-2x.jpg);
+  }
 }
