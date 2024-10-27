@@ -1046,6 +1046,7 @@ img {
     margin: 0;
     align-items: center;
     text-align: center;
+    justify-content: center;
     margin-left: 0;
   }
 
